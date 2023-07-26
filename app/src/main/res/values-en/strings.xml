@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">English</string>
+    <string name="str_es">Spanish</string>
+    <string name="str_de">German</string>
+    <string name="str_zh">Chinese</string>
+    <string name="str_fr">French</string>
+    <string name="str_hi">Hindi</string>
+    <string name="str_in">Indonesian</string>
+    <string name="str_it">Italian</string>
+    <string name="str_ja">Japanese</string>
+    <string name="str_pt">Portuguese</string>
+    <string name="str_ru">Russian</string>
+    <string name="str_th">Thai</string>
+    <string name="str_tr">Turkish</string>
+
+
+    <string name="app_name">Annote Domino</string>
+
+    <string name="empezar">Start</string>
+    <string name="opciones">Options</string>
+    <string name="partidasGuardadas">Saved games</string>
+    <string name="info">Information</string>
+
+    <string name="cant_puntos">Number of points:</string>
+    <string name="equiposDosPtos">Add team:</string>
+    <string name="equipos">Add equipment</string>
+    <string name="listaDequipos">List of teams:</string>
+    <string name="selectJugarCpases">Play with passes:</string>
+    <string name="aclaracion1">Write a name</string>
+    <string name="aclaracion2">You need at least two teams</string>
+
+
+    <string name="aplicar">Apply</string>
+    <string name="cancelar">Cancel</string>
+
+    <string name="equipo_1">Team 1</string>
+    <string name="equipo_2">Team 2</string>
+
+
+    <string name="escribirEquipo">Team</string>
+    <string name="aceptar">To accept</string>
+    <string name="ha_ganado">He has won the team</string>
+
+    <string name="creado">Created by:</string>
+    <string name="contactar">You can contact us:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">version:</string>
+
+    <string name="letra">This is the size of the letter</string>
+
+    <string name="pequeña">small</string>
+    <string name="mediana">median</string>
+    <string name="grande">big</string>
+
+    <string name="equiposOpciones">Teams</string>
+    <string name="partidoOpciones">Match</string>
+    <string name="idiomaOpciones">Idiom</string>
+    <string name="letraOpciones">Lyrics</string>
+    <string name="juegosOpciones">Play</string>
+
+
+    <string name="regresar">You can not return</string>
+
+    <string name="ultimaPartida">Load last game:</string>
+
+    <string name="noEscribioNombre">He did not write any name</string>
+
+    <string name="tipoJuego1">Classic</string>
+    <string name="tipoJuego1Explicacion">To score at the classic team game.
+                The winning team takes the points and the game ends.
+    </string>
+
+    <string name="tipoJuego2">Sum and follows.</string>
+    <string name="tipoJuego2Explicacion">Contribution of: Eve \n
+        The winning team takes all the points of that departure, until the
+         Number of total points of the game. The leftover spots will be for
+         the next match.
+    </string>
+
+    <string name="continuar">Continue Party</string>
+
+</resources>

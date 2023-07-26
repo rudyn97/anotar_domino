@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">英語</string>
+    <string name="str_es">スペイン語</string>
+    <string name="str_de">ドイツ人</string>
+    <string name="str_zh">中国語</string>
+    <string name="str_fr">フランス語</string>
+    <string name="str_hi">ヒンディーニー</string>
+    <string name="str_in">インドネシア語</string>
+    <string name="str_it">イタリアの</string>
+    <string name="str_ja">日本</string>
+    <string name="str_pt">ポルトガル語</string>
+    <string name="str_ru">ロシア</string>
+    <string name="str_th">タイ語</string>
+    <string name="str_tr">トルコ語</string>
+
+
+    <string name="app_name">ドミノと結合します。</string>
+
+    <string name="empezar">始める</string>
+    <string name="opciones">オプション</string>
+    <string name="partidasGuardadas">保存したゲーム</string>
+    <string name="info">情報</string>
+
+    <string name="cant_puntos">ポイント数：</string>
+    <string name="equiposDosPtos">チームを追加：</string>
+    <string name="equipos">装備を追加してください</string>
+    <string name="listaDequipos">チームのリスト：</string>
+    <string name="selectJugarCpases">パスで遊ぶ：</string>
+    <string name="aclaracion1">名前を書いてください</string>
+    <string name="aclaracion2">あなたは少なくとも2つのチームが必要です</string>
+
+
+    <string name="aplicar">申し込み</string>
+    <string name="cancelar">キャンセル</string>
+
+    <string name="equipo_1">チーム1</string>
+    <string name="equipo_2">チーム2</string>
+
+
+    <string name="escribirEquipo">チーム</string>
+    <string name="aceptar">受け入れるために</string>
+    <string name="ha_ganado">彼はチームに勝った</string>
+
+    <string name="creado">によって作成された：</string>
+    <string name="contactar">あなたは私達に連絡することができます：</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">バージョン： </string>
+
+    <string name="letra">これは文字の大きさです</string>
+
+    <string name="pequeña">小さな</string>
+    <string name="mediana">中央値</string>
+    <string name="grande">大きい</string>
+
+    <string name="equiposOpciones">チーム</string>
+    <string name="partidoOpciones">マッチ</string>
+    <string name="idiomaOpciones">熟語</string>
+    <string name="letraOpciones">歌詞</string>
+    <string name="juegosOpciones">演奏する</string>
+
+
+    <string name="regresar">あなたはreturnを返すことができません</string>
+
+    <string name="ultimaPartida">最後のゲームをロード：</string>
+
+    <string name="noEscribioNombre">彼は名前を書きませんでした</string>
+
+    <string name="tipoJuego1">クラシック</string>
+    <string name="tipoJuego1Explicacion">古典的なチームゲームで得点する。
+        勝利チームはポイントを取り、ゲームは終了します。
+    </string>
+
+    <string name="tipoJuego2">合計と続きます。</string>
+    <string name="tipoJuego2Explicacion">の寄与：Eve \n
+        勝利チームはその出発のすべてのポイントを取ります
+         ゲームの全ポイント数。 残りのスポットはフォーフォーでした
+         次の試合。
+    </string>
+
+    <string name="continuar">パーティーを続けます</string>
+
+</resources>

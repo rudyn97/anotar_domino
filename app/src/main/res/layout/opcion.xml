@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libreta_verde1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewOpciones1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:onClick="cambiarEquipoOpciones"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/radioCardView2"
+            app:cardElevation="@dimen/cardElevationCardView2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.044">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:onClick="cambiarEquipoOpciones"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/idImageEquipos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margen"
+                    android:layout_marginLeft="@dimen/margen"
+                    android:layout_marginRight="@dimen/margen"
+                    android:layout_marginTop="@dimen/margen"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:onClick="cambiarEquipoOpciones"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.469"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.06"
+                    app:srcCompat="@drawable/equipo" />
+
+                <TextView
+                    android:id="@+id/idTextViewEquipos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="cambiarEquipoOpciones"
+                    android:text="@string/equiposOpciones"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeTextViewIdioma" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewOpciones2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="cambiarPartidoOpciones"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/radioCardView2"
+                app:cardElevation="@dimen/cardElevationCardView2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/idImagePartidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margen"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:layout_marginTop="@dimen/margen"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:onClick="cambiarPartidoOpciones"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.469"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.06"
+                        app:srcCompat="@drawable/partido" />
+
+                    <TextView
+                        android:id="@+id/idTextViewPartidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/partidoOpciones"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSizeTextViewIdioma" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewOpciones3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="cambiarIdioma"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/radioCardView2"
+                app:cardElevation="@dimen/cardElevationCardView2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/idImageIdioma"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margen"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:layout_marginTop="@dimen/margen"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:onClick="cambiarIdioma"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.469"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.06"
+                        app:srcCompat="@drawable/idioma" />
+
+                    <TextView
+                        android:id="@+id/idTextViewIdioma"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:onClick="cambiarIdioma"
+                        android:text="@string/idiomaOpciones"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSizeTextViewIdioma" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewOpciones4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="entrarAletra"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/radioCardView2"
+                app:cardElevation="@dimen/cardElevationCardView2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/idImageLetra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margen"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:layout_marginTop="@dimen/margen"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:onClick="entrarAletra"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.469"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.06"
+                        app:srcCompat="@drawable/letra" />
+
+                    <TextView
+                        android:id="@+id/idTextViewLetra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:onClick="entrarAletra"
+                        android:text="@string/letraOpciones"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSizeTextViewIdioma" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewOpciones5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="cambiarJuego"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/radioCardView2"
+                app:cardElevation="@dimen/cardElevationCardView2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/idImageJuego"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margen"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:layout_marginTop="@dimen/margen"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:onClick="cambiarJuego"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.469"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.06"
+                        app:srcCompat="@drawable/juego" />
+
+                    <TextView
+                        android:id="@+id/idTextViewJuego"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:onClick="cambiarJuego"
+                        android:text="@string/juegosOpciones"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSizeTextViewIdioma" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

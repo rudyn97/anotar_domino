@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">inglese</string>
+    <string name="str_es">spagnolo</string>
+    <string name="str_de">Tedesco</string>
+    <string name="str_zh">Cinese</string>
+    <string name="str_fr">francese</string>
+    <string name="str_hi">hindi</string>
+    <string name="str_in">indonesiano</string>
+    <string name="str_it">italiano</string>
+    <string name="str_ja">giapponese</string>
+    <string name="str_pt">portoghese</string>
+    <string name="str_ru">russo</string>
+    <string name="str_th">tailandese</string>
+    <string name="str_tr">Turco</string>
+
+
+    <string name="app_name">Punteggio Domino</string>
+
+    <string name="empezar">Cominciare</string>
+    <string name="opciones">Opzioni</string>
+    <string name="partidasGuardadas">Giochi salvati</string>
+    <string name="info">Informazione</string>
+
+    <string name="cant_puntos">Numero di punti:</string>
+    <string name="equiposDosPtos">Aggiungi team:</string>
+    <string name="equipos">Aggiungi attrezzature</string>
+    <string name="listaDequipos">Elenco dei team:</string>
+    <string name="selectJugarCpases">Gioca con i passaggi:</string>
+    <string name="aclaracion1">Scrivi un nome.</string>
+    <string name="aclaracion2">Hai bisogno di almeno due squadre</string>
+
+
+    <string name="aplicar">Applicare</string>
+    <string name="cancelar">Annulla</string>
+
+    <string name="equipo_1">Team 1</string>
+    <string name="equipo_2">Team 2</string>
+
+
+    <string name="escribirEquipo">Squadra</string>
+    <string name="aceptar">Accettare</string>
+    <string name="ha_ganado">Ha vinto la squadra</string>
+
+    <string name="creado">Creato da:</string>
+    <string name="contactar">Puoi contattarci:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">versione: </string>
+
+    <string name="letra">Questa è la dimensione della lettera</string>
+
+    <string name="pequeña">piccolo</string>
+    <string name="mediana">mediano</string>
+    <string name="grande">grande</string>
+
+    <string name="equiposOpciones">Team</string>
+    <string name="partidoOpciones">Incontro</string>
+    <string name="idiomaOpciones">Idioma</string>
+    <string name="letraOpciones">Testi</string>
+    <string name="juegosOpciones">Giocare</string>
+
+
+    <string name="regresar">Non puoi tornare</string>
+
+    <string name="ultimaPartida">Carica l\'ultimo gioco:</string>
+
+    <string name="noEscribioNombre">Non ha scritto alcun nome</string>
+
+    <string name="tipoJuego1">Classico</string>
+    <string name="tipoJuego1Explicacion">Segnare il classico gioco di squadra.
+        La squadra vincente prende i punti e il gioco finisce.
+    </string>
+
+    <string name="tipoJuego2">Somma e segue</string>
+    <string name="tipoJuego2Explicacion">Contributo di: Eve \n
+        La squadra vincente prende tutti i punti di quella partenza, fino al
+         Numero di punti totali del gioco. I punti rimanenti saranno per
+         la prossima partita.
+    </string>
+
+    <string name="continuar">Continua la festa</string>
+
+</resources>

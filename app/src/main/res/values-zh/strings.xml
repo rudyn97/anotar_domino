@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">英语</string>
+    <string name="str_es">西班牙语</string>
+    <string name="str_de">德语</string>
+    <string name="str_zh">中国人</string>
+    <string name="str_fr">法语</string>
+    <string name="str_hi">印地语</string>
+    <string name="str_in">印度尼西亚</string>
+    <string name="str_it">意大利人</string>
+    <string name="str_ja">日本人</string>
+    <string name="str_pt">葡萄牙语</string>
+    <string name="str_ru">俄语</string>
+    <string name="str_th">泰国</string>
+    <string name="str_tr">土耳其</string>
+
+
+    <string name="app_name">得分多米诺骨牌</string>
+
+    <string name="empezar">开始</string>
+    <string name="opciones">选项</string>
+    <string name="partidasGuardadas">保存的游戏</string>
+    <string name="info">信息</string>
+
+    <string name="cant_puntos">点数：</string>
+    <string name="equiposDosPtos">添加团队：</string>
+    <string name="equipos">添加设备</string>
+    <string name="listaDequipos">团队列表：</string>
+    <string name="selectJugarCpases">玩过：</string>
+    <string name="aclaracion1">写一个名字</string>
+    <string name="aclaracion2">你需要至少两支球队</string>
+
+
+    <string name="aplicar">申请</string>
+    <string name="cancelar">取消</string>
+
+    <string name="equipo_1">团队1</string>
+    <string name="equipo_2">2队</string>
+
+
+    <string name="escribirEquipo">团队</string>
+    <string name="aceptar">接受</string>
+    <string name="ha_ganado">他赢得了团队</string>
+
+    <string name="creado">由…制作：</string>
+    <string name="contactar">您可以联系我们：</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">版本： </string>
+
+    <string name="letra">这是信的大小</string>
+
+    <string name="pequeña">小的</string>
+    <string name="mediana">中位数</string>
+    <string name="grande">大</string>
+
+    <string name="equiposOpciones">队</string>
+    <string name="partidoOpciones">匹配</string>
+    <string name="idiomaOpciones">成语</string>
+    <string name="letraOpciones">歌词</string>
+    <string name="juegosOpciones">玩</string>
+
+
+    <string name="regresar">你不能返回</string>
+
+    <string name="ultimaPartida">加载去年游戏：</string>
+
+    <string name="noEscribioNombre">他没有写任何名字</string>
+
+    <string name="tipoJuego1">经典的</string>
+    <string name="tipoJuego1Explicacion">在经典的团队比赛中得分。
+获奖团队将点数和游戏结束。
+</string>
+
+    <string name="tipoJuego2">总和和下面。</string>
+    <string name="tipoJuego2Explicacion">贡献: Eve \n
+        胜利的团队占据了这一切，直到
+         游戏总数的数量。 剩余的斑点将是为了
+         下一个比赛。
+    </string>
+
+    <string name="continuar">继续派对</string>
+
+</resources>

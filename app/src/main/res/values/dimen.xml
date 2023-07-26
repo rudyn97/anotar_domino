@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen">8dp</dimen>
+
+    <!--activity_main-->
+
+    <dimen name="textSizeAnotarD">100sp</dimen>
+    <dimen name="marginTopAnotarD">30dp</dimen>
+
+    <dimen name="textSizeBotonesInicio">40sp</dimen>
+    <dimen name="paddingBottTopBotonesInic">5dp</dimen>
+    <dimen name="paddingEndStartBotonesInic">15dp</dimen>
+    <dimen name="radioBotonesInicio">10dp</dimen>
+
+    <!--anotar_juegos-->
+
+    <dimen name="textSizeEditTextEquipo">28sp</dimen>
+
+    <dimen name="layoutHeightLinearLayout">105dp</dimen>
+
+    <dimen name="marginTopSpinnerEquipo">10dp</dimen>
+    <dimen name="paddingRightSpinnerEquipo">40dp</dimen>
+
+    <dimen name="layoutWidthCheckBoxEq">110dp</dimen>
+
+    <dimen name="layoutWidthTextView">10dp</dimen>
+
+    <dimen name="layoutWidthEditTextPtos1">30dp</dimen>
+    <dimen name="textSizeEditTextPtos1">44sp</dimen>
+
+    <dimen name="textSizeTextView1">50sp</dimen>
+
+    <dimen name="textSizeTextViewPos1">44sp</dimen>
+
+    <dimen name="layoutWidthTextView13">20dp</dimen>
+
+    <dimen name="layoutHeightLinearLayout4">80dp</dimen>
+
+    <dimen name="marginEndStartIdBoton1P10">10dp</dimen>
+    <dimen name="textSizeIdBoton1P10">40sp</dimen>
+
+    <!--custom_layout-->
+
+    <dimen name="marginTopTextViewGrande">32dp</dimen>
+    <dimen name="textSizeTextViewGrande">40sp</dimen>
+
+    <dimen name="marginTopEquipo1">25dp</dimen>
+    <dimen name="textSizeEquipo1">30sp</dimen>
+
+    <dimen name="marginLeftFrameLayout">96dp</dimen>
+
+    <dimen name="textSizeIdTextViewPtosE1">25sp</dimen>
+
+    <dimen name="textSizeAceptarCancel">35sp</dimen>
+    <dimen name="paddingBottomTopAceptarCancel">5dp</dimen>
+
+    <!--custom_layout_1-->
+
+    <dimen name="heightCardView">90dp</dimen>
+    <dimen name="widthCardView">320dp</dimen>
+    <dimen name="cornerRadiusCardView">10dp</dimen>
+    <dimen name="elevationCardView">10dp</dimen>
+
+    <dimen name="widhtImage">95dp</dimen>
+    <dimen name="heightImage">50dp</dimen>
+    <dimen name="margenTopImage">20dp</dimen>
+
+    <dimen name="marginStartTexto">150dp</dimen>
+    <dimen name="marginTopTexto">25dp</dimen>
+    <dimen name="textSizeTexto">45sp</dimen>
+
+    <!--informacion-->
+
+    <dimen name="textSizeIdStringNombre">45sp</dimen>
+
+    <dimen name="heightImagen">350dp</dimen>
+    <dimen name="widhtImagen">350dp</dimen>
+
+    <dimen name="textSizeCreadoPor">35sp</dimen>
+
+    <dimen name="textSizeMiNombre">30sp</dimen>
+
+    <dimen name="textSizeContacto">25sp</dimen>
+
+    <dimen name="textSizeVersion">20sp</dimen>
+
+    <!--letra-->
+
+    <dimen name="heightIdTextLetra">200dp</dimen>
+    <dimen name="textSizeIdTextLetra">40sp</dimen>
+
+    <dimen name="marginBottomPequeñaMed">20dp</dimen>
+    <dimen name="textSizePequeñaMedGrand">40sp</dimen>
+
+    <dimen name="textSizeAceptCancel">33sp</dimen>
+
+    <!--mostrar_juego-->
+
+    <dimen name="layoutWidhtTextView52">10dp</dimen>
+
+    <dimen name="heightLinearLayout">50dp</dimen>
+    <dimen name="textSizeDentroLinearLayout">28sp</dimen>
+
+    <dimen name="heightIdPuntos">35dp</dimen>
+    <dimen name="textSizeIdPuntos">25sp</dimen>
+
+    <dimen name="heightFrameLayout">50dp</dimen>
+
+    <dimen name="textSizeIdPuntosP">30sp</dimen>
+
+    <dimen name="heightTextView">3dp</dimen>
+
+    <!--opciones-->
+
+    <dimen name="radioCardView2">20dp</dimen>
+    <dimen name="cardElevationCardView2">5dp</dimen>
+
+    <dimen name="textSizeTextViewIdioma">30sp</dimen>
+
+    <dimen name="textSizeCantidadPuntos">35sp</dimen>
+
+    <dimen name="widhtIdAnotarCantidadDePuntos">80dp</dimen>
+    <dimen name="textSizeIdAnotarCantidadDePuntos">30sp</dimen>
+
+    <dimen name="widhtMasked">180dp</dimen>
+    <dimen name="textSizeMasked">25sp</dimen>
+
+    <dimen name="heightWidthQuitarJugador">50dp</dimen>
+
+    <dimen name="heightWidthBtonAñadirJugador">50dp</dimen>
+
+    <dimen name="textSizeIdTextViewListaEquipo">40sp</dimen>
+
+    <dimen name="paddingRightIdSpinnerJ1">50dp</dimen>
+
+    <dimen name="widhtIdTextViewJugarConPase">220dp</dimen>
+    <dimen name="textSizeIdTextViewJugarConPase">40sp</dimen>
+
+
+    <dimen name="widhtEditTextPase">70dp</dimen>
+    <dimen name="textSizeEditTextPase">35sp</dimen>
+
+    <dimen name="textSizeBtonAplicarCancelar">35sp</dimen>
+
+    <!--simple_spinner_item-->
+
+    <dimen name="textSizeTextView">18sp</dimen>
+    <dimen name="marginEndStartTextView">10dp</dimen>
+
+    <!--entre_main_y_anotar-->
+
+    <dimen name="textSizeUltimaPartida">50sp</dimen>
+
+    <dimen name="textSizeNombre">30sp</dimen>
+
+    <dimen name="textSizePuntos">20sp</dimen>
+
+    <dimen name="textSizeBton">24sp</dimen>
+
+
+
+
+</resources>

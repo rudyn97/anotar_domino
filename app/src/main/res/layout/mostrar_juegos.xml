@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_custom_layout"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <Button
+        android:id="@+id/idButtonAnterior"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/izquierda"
+        android:onClick="ant"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/idButtonSiguiente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/idButtonSiguiente"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/derecha"
+        android:onClick="sig"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/raya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idButtonAnterior"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margen"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/idPuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImagePollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idPuntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/idPuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImagePollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id1Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id1PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage1Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id1Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id1PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage1Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id2Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id2PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage2Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id2Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id2PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage2Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id3Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id3PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage3Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id3Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id3PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage3Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id4Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id4PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage4Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id4Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id4PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage4Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margen"
+            android:layout_marginLeft="@dimen/margen"
+            android:layout_marginTop="@dimen/margen"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/idBotonBorrar6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+
+                <TextView
+                    android:id="@+id/idTextViewFecha5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id5Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id5PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage5Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id5Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id5PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage5Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id6Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id6PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage6Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id6Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id6PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage6Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id7Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id7PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage7Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id7Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id7PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage7Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id8Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id8PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage8Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id8Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id8PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage8Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTextView"
+                android:background="@drawable/raya" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLinearLayout"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idTextViewFecha9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/textSizeDentroLinearLayout" />
+
+                <Button
+                    android:id="@+id/idBotonBorrar10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/delete"
+                    android:onClick="borrarPartida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id9Puntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.183"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id9PuntosP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage9Pollo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="@dimen/heightTextView"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/raya" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id9Puntos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightIdPuntos"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margen"
+                        android:layout_marginRight="@dimen/margen"
+                        android:gravity="top|center"
+                        android:textSize="@dimen/textSizeIdPuntos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.809"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/heightFrameLayout"
+                        android:layout_weight="1">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/id9PuntosP1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="top|center"
+                                    android:textSize="@dimen/textSizeIdPuntosP" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <ImageView
+                            android:id="@+id/idImage9Pollo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            app:srcCompat="@android:color/transparent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

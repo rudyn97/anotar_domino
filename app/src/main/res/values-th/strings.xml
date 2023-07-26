@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">ภาษาอังกฤษ</string>
+    <string name="str_es">ภาษาสเปน</string>
+    <string name="str_de">ภาษาเยอรมัน</string>
+    <string name="str_zh">ภาษาจีน</string>
+    <string name="str_fr">ภาษาฝรั่งเศส</string>
+    <string name="str_hi">ภาษาฮินดี</string>
+    <string name="str_in">ชาวอินโดนีเซีย</string>
+    <string name="str_it">ภาษาอิตาลี</string>
+    <string name="str_ja">ญี่ปุ่น</string>
+    <string name="str_pt">ชาวโปรตุเกส</string>
+    <string name="str_ru">ชาวรัสเซีย</string>
+    <string name="str_th">ไทย</string>
+    <string name="str_tr">ตุรกี</string>
+
+
+    <string name="app_name">คะแนนโดมิโน</string>
+
+    <string name="empezar">เริ่ม</string>
+    <string name="opciones">ตัวเลือก</string>
+    <string name="partidasGuardadas">เกมที่บันทึกไว้</string>
+    <string name="info">ข้อมูล</string>
+
+    <string name="cant_puntos">จำนวนคะแนน:</string>
+    <string name="equiposDosPtos">เพิ่มทีม:</string>
+    <string name="equipos">เพิ่มอุปกรณ์</string>
+    <string name="listaDequipos">รายชื่อของทีม:</string>
+    <string name="selectJugarCpases">เล่นกับ Passes:</string>
+    <string name="aclaracion1">เขียนชื่อ</string>
+    <string name="aclaracion2">คุณต้องการอย่างน้อยสองทีม</string>
+
+
+    <string name="aplicar">นำมาใช้</string>
+    <string name="cancelar">ยกเลิก</string>
+
+    <string name="equipo_1">ทีม 1</string>
+    <string name="equipo_2">ทีม 2</string>
+
+
+    <string name="escribirEquipo">ทีม</string>
+    <string name="aceptar">ที่จะยอมรับ</string>
+    <string name="ha_ganado">เขาชนะทีม</string>
+
+    <string name="creado">สร้างโดย:</string>
+    <string name="contactar">คุณสามารถติดต่อเรา:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">รุ่น: </string>
+
+    <string name="letra">นี่คือขนาดของตัวอักษร</string>
+
+    <string name="pequeña">เล็ก</string>
+    <string name="mediana">ค่ามัธยฐาน</string>
+    <string name="grande">ใหญ่</string>
+
+    <string name="equiposOpciones">ทีม</string>
+    <string name="partidoOpciones">จับคู่</string>
+    <string name="idiomaOpciones">สำนวน</string>
+    <string name="letraOpciones">เนื้อเพลง</string>
+    <string name="juegosOpciones">เล่น</string>
+
+
+    <string name="regresar">คุณไม่สามารถกลับมาได้</string>
+
+    <string name="ultimaPartida">โหลดเกมสุดท้าย:</string>
+
+    <string name="noEscribioNombre">เขาไม่ได้เขียนชื่อใด ๆ</string>
+
+    <string name="tipoJuego1">คลาสสิก</string>
+    <string name="tipoJuego1Explicacion">เพื่อทำคะแนนในเกมทีมคลาสสิค
+        ทีมที่ชนะจะได้รับคะแนนและเกมสิ้นสุดลง
+    </string>
+
+    <string name="tipoJuego2">ผลรวมและติดตาม</string>
+    <string name="tipoJuego2Explicacion">การมีส่วนร่วมของ: Eve \n
+        ทีมที่ชนะจะใช้คะแนนทั้งหมดของการออกเดินทางจนกระทั่ง
+         จำนวนจุดรวมของเกม จุดที่เหลือจะเป็นไปได้
+         นัดต่อไป
+    </string>
+
+    <string name="continuar">ปาร์ตี้ต่อไป</string>
+
+</resources>

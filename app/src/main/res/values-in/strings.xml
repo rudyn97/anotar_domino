@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">bahasa Inggris</string>
+    <string name="str_es">Orang Spanyol</string>
+    <string name="str_de">Jerman</string>
+    <string name="str_zh">Cina</string>
+    <string name="str_fr">Perancis</string>
+    <string name="str_hi">Hindi</string>
+    <string name="str_in">bahasa Indonesia</string>
+    <string name="str_it">Italia</string>
+    <string name="str_ja">Jepang</string>
+    <string name="str_pt">Portugis</string>
+    <string name="str_ru">Rusia</string>
+    <string name="str_th">Thai</string>
+    <string name="str_tr">Turki</string>
+
+
+    <string name="app_name">Skor Domino</string>
+
+    <string name="empezar">Awal</string>
+    <string name="opciones">Pilihan</string>
+    <string name="partidasGuardadas">Game yang disimpan</string>
+    <string name="info">Informasi</string>
+
+    <string name="cant_puntos">Jumlah poin:</string>
+    <string name="equiposDosPtos">Tambahkan Tim:</string>
+    <string name="equipos">Tambahkan Peralatan</string>
+    <string name="listaDequipos">Daftar tim:</string>
+    <string name="selectJugarCpases">Bermain dengan Passes:</string>
+    <string name="aclaracion1">Tulis nama</string>
+    <string name="aclaracion2">Anda membutuhkan setidaknya dua tim</string>
+
+
+    <string name="aplicar">Berlaku</string>
+    <string name="cancelar">Membatalkan</string>
+
+    <string name="equipo_1">Tim 1</string>
+    <string name="equipo_2">Tim 2</string>
+
+
+    <string name="escribirEquipo">Tim</string>
+    <string name="aceptar">Menerima</string>
+    <string name="ha_ganado">Dia telah memenangkan tim</string>
+
+    <string name="creado">Dibuat oleh:</string>
+    <string name="contactar">Anda dapat menghubungi kami:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">Versi: kapan: </string>
+
+    <string name="letra">Ini ukuran surat itu</string>
+
+    <string name="pequeña">kecil</string>
+    <string name="mediana">median</string>
+    <string name="grande">besar</string>
+
+    <string name="equiposOpciones">Tim</string>
+    <string name="partidoOpciones">Cocok</string>
+    <string name="idiomaOpciones">Idiom</string>
+    <string name="letraOpciones">Lirik</string>
+    <string name="juegosOpciones">Bermain</string>
+
+
+    <string name="regresar">Anda tidak dapat kembali</string>
+
+    <string name="ultimaPartida">Muat game terakhir:</string>
+
+    <string name="noEscribioNombre">Dia tidak menulis nama</string>
+
+    <string name="tipoJuego1">Klasik</string>
+    <string name="tipoJuego1Explicacion">Untuk mencetak gol di game tim klasik.
+        Tim pemenang mengambil poin dan permainan berakhir.
+    </string>
+
+    <string name="tipoJuego2">Jumlah dan berikut</string>
+    <string name="tipoJuego2Explicacion">Kontribusi: Eve \n
+        Tim pemenang mengambil semua poin keberangkatan itu, sampai
+         Jumlah titik total permainan. Bintik sisa akan untuk
+         pertandingan selanjutnya.
+    </string>
+
+    <string name="continuar">Lanjutkan pesta</string>
+
+</resources>

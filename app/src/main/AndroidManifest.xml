@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rudyn.anotar_domino" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PartidoOpciones" android:screenOrientation="portrait" />
+        <activity android:name=".Opcion" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".EquipoOpciones" android:screenOrientation="portrait" />
+
+        <activity android:name=".AnotarJuegos" android:screenOrientation="portrait">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".MostrarJuegos" android:screenOrientation="portrait"/>
+        <activity android:name=".Informacion" android:screenOrientation="portrait"/>
+        <activity android:name=".Idioma" android:screenOrientation="portrait" />
+        <activity android:name=".Letra" android:screenOrientation="portrait" />
+        <activity android:name=".EntreMainyAnotar" android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Dialog"
+            />
+        <activity android:name=".JuegoOpciones" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">английский</string>
+    <string name="str_es">испанский язык</string>
+    <string name="str_de">Немецкий</string>
+    <string name="str_zh">китайский язык</string>
+    <string name="str_fr">французский язык</string>
+    <string name="str_hi">хинди</string>
+    <string name="str_in">индонезийский</string>
+    <string name="str_it">Итальянский</string>
+    <string name="str_ja">Японский</string>
+    <string name="str_pt">португальский</string>
+    <string name="str_ru">русский</string>
+    <string name="str_th">Тайский</string>
+    <string name="str_tr">турецкий</string>
+
+
+    <string name="app_name">Оценка домино</string>
+
+    <string name="empezar">Начинать</string>
+    <string name="opciones">Опции</string>
+    <string name="partidasGuardadas">Сохраненные игры</string>
+    <string name="info">Информация</string>
+
+    <string name="cant_puntos">Количество очков:</string>
+    <string name="equiposDosPtos">Добавить команду:</string>
+    <string name="equipos">Добавить оборудование</string>
+    <string name="listaDequipos">Список команд:</string>
+    <string name="selectJugarCpases">Играть с пропусками:</string>
+    <string name="aclaracion1">Написать имя</string>
+    <string name="aclaracion2">Вам нужно как минимум две команды</string>
+
+
+    <string name="aplicar">Применять</string>
+    <string name="cancelar">Отмена</string>
+
+    <string name="equipo_1">Команда 1</string>
+    <string name="equipo_2">Команда 2</string>
+
+
+    <string name="escribirEquipo">Команда</string>
+    <string name="aceptar">Принять</string>
+    <string name="ha_ganado">Он выиграл команду</string>
+
+    <string name="creado">Сделано:</string>
+    <string name="contactar">Вы можете связаться с нами:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">версия: </string>
+
+    <string name="letra">Это размер буквы</string>
+
+    <string name="pequeña">небольшой</string>
+    <string name="mediana">посредственность</string>
+    <string name="grande">большой</string>
+
+    <string name="equiposOpciones">Команды</string>
+    <string name="partidoOpciones">Соответствовать</string>
+    <string name="idiomaOpciones">идиома</string>
+    <string name="letraOpciones">Текст песни</string>
+    <string name="juegosOpciones">Играть</string>
+
+
+    <string name="regresar">Вы не можете вернуться</string>
+
+    <string name="ultimaPartida">Загрузить последнюю игру:</string>
+
+    <string name="noEscribioNombre">Он не писал имя</string>
+
+    <string name="tipoJuego1">Классика</string>
+    <string name="tipoJuego1Explicacion">Чтобы забить в классической команде игры.
+        Победившая команда берет точки, и игра заканчивается.
+    </string>
+
+    <string name="tipoJuego2">Сумма и следует</string>
+    <string name="tipoJuego2Explicacion">Вклад: Eve \n
+        Победившая команда берет все точки этого отъезда, пока
+         Количество общих точек игры. Остальные пятна будут для
+         следующий матч.
+    </string>
+
+    <string name="continuar">Продолжить вечеринку</string>
+
+</resources>

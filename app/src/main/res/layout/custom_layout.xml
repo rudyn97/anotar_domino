@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_custom_layout"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/idTextViewGrande"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopTextViewGrande"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Ha ganado el equipo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeTextViewGrande"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTextViewNombreE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopEquipo1"
+        android:text="Equipo 1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeEquipo1"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewGrande" />
+
+    <TextView
+        android:id="@+id/idTextViewNombreE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopEquipo1"
+        android:text="Equipo 2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeEquipo1"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewGrande" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/idTextViewNombreE1"
+        app:layout_constraintRight_toRightOf="@+id/idTextViewNombreE1"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewNombreE1"
+        app:layout_constraintVertical_bias="0.141">
+
+        <TextView
+            android:id="@+id/idTextViewPtosE1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen"
+            android:layout_marginRight="@dimen/margen"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeIdTextViewPtosE1"
+            android:visibility="invisible"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTextViewNombreE1" />
+
+        <ImageView
+            android:id="@+id/imagePolloL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/pollo_layout" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/idTextViewNombreE2"
+        app:layout_constraintRight_toRightOf="@+id/idTextViewNombreE2"
+        app:layout_constraintTop_toBottomOf="@+id/idTextViewNombreE2"
+        app:layout_constraintVertical_bias="0.141">
+
+        <TextView
+            android:id="@+id/idTextViewPtosE2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margen"
+            android:layout_marginRight="@dimen/margen"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeIdTextViewPtosE1"
+            android:visibility="invisible"
+            app:layout_constraintHorizontal_bias="0.779"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTextViewNombreE2" />
+
+        <ImageView
+            android:id="@+id/imagePolloL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/pollo_layout" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/idBtnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen"
+        android:layout_marginLeft="@dimen/margen"
+        android:layout_marginRight="@dimen/margen"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/accept"
+        android:gravity="center"
+        android:onClick="ok"
+        android:paddingBottom="@dimen/paddingBottomTopAceptarCancel"
+        android:paddingTop="@dimen/paddingBottomTopAceptarCancel"
+        android:text="@string/aceptar"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeAceptarCancel"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCheckBoxContinuarJ" />
+
+    <TextView
+        android:id="@+id/idBtnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen"
+        android:layout_marginLeft="@dimen/margen"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/cancel"
+        android:gravity="center"
+        android:onClick="Cancel"
+        android:paddingBottom="@dimen/paddingBottomTopAceptarCancel"
+        android:paddingTop="@dimen/paddingBottomTopAceptarCancel"
+        android:text="@string/cancelar"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeAceptarCancel"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/idBtnOk"
+        app:layout_constraintTop_toBottomOf="@+id/idCheckBoxContinuarJ" />
+
+    <CheckBox
+        android:id="@+id/idCheckBoxContinuarJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/boton_checkbox"
+        android:onClick="cambiarChecked"
+        android:text="@string/continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.083" />
+
+</android.support.constraint.ConstraintLayout>

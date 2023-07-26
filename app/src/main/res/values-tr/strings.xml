@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">ingilizce</string>
+    <string name="str_es">İspanyol</string>
+    <string name="str_de">Almanca</string>
+    <string name="str_zh">Çince</string>
+    <string name="str_fr">Fransızca</string>
+    <string name="str_hi">Hintçe</string>
+    <string name="str_in">Endonezyacı</string>
+    <string name="str_it">İtalyan</string>
+    <string name="str_ja">Japonca</string>
+    <string name="str_pt">Portekizce</string>
+    <string name="str_ru">Rusça</string>
+    <string name="str_th">Tayland</string>
+    <string name="str_tr">Türk</string>
+
+
+    <string name="app_name">Skor Dominó</string>
+
+    <string name="empezar">Başlangıç</string>
+    <string name="opciones">Seçenekler</string>
+    <string name="partidasGuardadas">Kayıtlı Oyunlar</string>
+    <string name="info">Bilgi</string>
+
+    <string name="cant_puntos">Puan sayısı:</string>
+    <string name="equiposDosPtos">Takım ekle:</string>
+    <string name="equipos">Ekipman Ekleme</string>
+    <string name="listaDequipos">Ekipler Listesi:</string>
+    <string name="selectJugarCpases">Geçişlerle oyna:</string>
+    <string name="aclaracion1">Bir isim yaz</string>
+    <string name="aclaracion2">En az iki takıma ihtiyacınız var</string>
+
+
+    <string name="aplicar">Uygulamak</string>
+    <string name="cancelar">İptal</string>
+
+    <string name="equipo_1">Takım 1</string>
+    <string name="equipo_2">Takım 2</string>
+
+
+    <string name="escribirEquipo">Takım</string>
+    <string name="aceptar">Kabul etmek</string>
+    <string name="ha_ganado">Ekibi kazandı</string>
+
+    <string name="creado">Tarafından yaratıldı:</string>
+    <string name="contactar">Bizimle iletişime geçebilirsiniz:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">Sürüm: </string>
+
+    <string name="letra">Bu mektubun büyüklüğü</string>
+
+    <string name="pequeña">küçük</string>
+    <string name="mediana">medyan</string>
+    <string name="grande">büyük</string>
+
+    <string name="equiposOpciones">Takımlar</string>
+    <string name="partidoOpciones">Eşleşme</string>
+    <string name="idiomaOpciones">Deyim</string>
+    <string name="letraOpciones">Şarkı sözleri</string>
+    <string name="juegosOpciones">Oyna</string>
+
+
+    <string name="regresar">Geri dönemezsin</string>
+
+    <string name="ultimaPartida">Son oyunu yükle:</string>
+
+    <string name="noEscribioNombre">Herhangi bir isim yazmadı</string>
+
+    <string name="tipoJuego1">Klasik</string>
+    <string name="tipoJuego1Explicacion">Klasik Takım oyununda puan almak için.
+        Kazanan takım puanları alır ve oyun sona erer.
+    </string>
+
+    <string name="tipoJuego2">Toplamı ve takip eder.</string>
+    <string name="tipoJuego2Explicacion">Katkısı: Eve \n
+        Kazanan takım, bu kalkışın tüm noktalarını alır.
+         Oyunun toplam puan sayısı. Artık lekeler için olacak
+         sonraki maç.
+    </string>
+
+    <string name="continuar">Devam et</string>
+
+</resources>

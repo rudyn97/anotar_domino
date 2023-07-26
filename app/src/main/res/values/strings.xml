@@ -1,0 +1,97 @@
+<resources>
+
+    <string-array name="languages">
+        <item>@string/str_en</item>
+        <item>@string/str_es</item>
+        <item>@string/str_de</item>
+        <item>@string/str_zh</item>
+        <item>@string/str_fr</item>
+        <item>@string/str_hi</item>
+        <item>@string/str_in</item>
+        <item>@string/str_it</item>
+        <item>@string/str_ja</item>
+        <item>@string/str_pt</item>
+        <item>@string/str_ru</item>
+        <item>@string/str_th</item>
+        <item>@string/str_tr</item>
+    </string-array>
+
+    <string name="str_en">Ingles</string>
+    <string name="str_es">Español</string>
+    <string name="str_de">Aleman</string>
+    <string name="str_zh">Chino</string>
+    <string name="str_fr">Frances</string>
+    <string name="str_hi">Hindi</string>
+    <string name="str_in">Indonesio</string>
+    <string name="str_it">Italiano</string>
+    <string name="str_ja">Japones</string>
+    <string name="str_pt">Portugues</string>
+    <string name="str_ru">Ruso</string>
+    <string name="str_th">Tailandes</string>
+    <string name="str_tr">Turco</string>
+
+
+    <string name="app_name">Anotar Domino</string>
+
+    <string name="empezar">Iniciar</string>
+    <string name="opciones">Opciones</string>
+    <string name="partidasGuardadas">Partidas Guardadas</string>
+    <string name="info">Informacion</string>
+
+    <string name="cant_puntos">Cantidad de puntos:</string>
+    <string name="equiposDosPtos">Añadir equipo:</string>
+    <string name="equipos">Añadir equipo</string>
+    <string name="listaDequipos">Lista de equipos:</string>
+    <string name="selectJugarCpases">Jugar con pases:</string>
+    <string name="aclaracion1">Escriba algun nombre</string>
+    <string name="aclaracion2">Necesita al menos dos equipos</string>
+
+
+    <string name="aplicar">Aplicar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="equipo_1">Equipo1</string>
+    <string name="equipo_2">Equipo2</string>
+
+
+    <string name="escribirEquipo">Equipo</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="ha_ganado">Ha Ganado el equipo</string>
+
+    <string name="creado">Creado por:</string>
+    <string name="contactar">Puede contactarnos a:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">versión: </string>
+
+    <string name="letra">Asi se muestra el tamaño de la letra</string>
+
+    <string name="pequeña">pequeña</string>
+    <string name="mediana">mediana</string>
+    <string name="grande">grande</string>
+
+    <string name="equiposOpciones">Equipos</string>
+    <string name="partidoOpciones">Partido</string>
+    <string name="idiomaOpciones">Idioma</string>
+    <string name="letraOpciones">Letra</string>
+    <string name="juegosOpciones">Juego</string>
+
+
+    <string name="regresar">No puede regresar</string>
+
+    <string name="ultimaPartida">Cargar ultima partida:</string>
+
+    <string name="noEscribioNombre">No escribió ningún nombre</string>
+
+    <string name="tipoJuego1">Clasico</string>
+    <string name="tipoJuego1Explicacion">Para anotar en el juego clasico por equipos.
+        El equipo ganador se lleva los puntos y termina la partida.</string>
+
+    <string name="tipoJuego2">Suma y sigue</string>
+    <string name="tipoJuego2Explicacion">Aporte de: Eve \n
+        El equipo ganador se lleva todos los puntos de esa partida, hasta la
+        cantidad de puntos total del juego. Los puntos sobrantes seran para
+        el proximo partido.</string>
+
+    <string name="continuar">Continuar partido</string>
+
+</resources>

@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_custom_layout"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="español"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="español"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="español"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/espanna" />
+
+                    <TextView
+                        android:id="@+id/idTextViewEsp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="español"
+                        android:text="@string/str_es"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="ingles"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="ingles"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="ingles"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/eeuu" />
+
+                    <TextView
+                        android:id="@+id/idTextViewIng"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="ingles"
+                        android:text="@string/str_en"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="aleman"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="aleman"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="aleman"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/aleman" />
+
+                    <TextView
+                        android:id="@+id/idTextViewAle"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="aleman"
+                        android:text="@string/str_de"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="frances"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="frances"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="frances"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/frances" />
+
+                    <TextView
+                        android:id="@+id/idTextViewFra"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="frances"
+                        android:text="@string/str_fr"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="indio"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="indio"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="indio"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/indio" />
+
+                    <TextView
+                        android:id="@+id/idTextViewIn"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="indio"
+                        android:text="@string/str_hi"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="indonesio"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="indonesio"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="indonesio"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/indonesio" />
+
+                    <TextView
+                        android:id="@+id/idTextViewIndo"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="indonesio"
+                        android:text="@string/str_in"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="italiano"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="italiano"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="italiano"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/italiano" />
+
+                    <TextView
+                        android:id="@+id/idTextViewIta"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="italiano"
+                        android:text="@string/str_it"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="japones"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="japones"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="japones"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/japones" />
+
+                    <TextView
+                        android:id="@+id/idTextViewJap"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="japones"
+                        android:text="@string/str_ja"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="portugal"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="portugal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="portugal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/portuges" />
+
+                    <TextView
+                        android:id="@+id/idTextViewPort"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="portugal"
+                        android:text="@string/str_pt"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="ruso"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="ruso"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="ruso"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/ruso" />
+
+                    <TextView
+                        android:id="@+id/idTextViewRuso"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="ruso"
+                        android:text="@string/str_ru"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="tailandes"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="tailandes"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="tailandes"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/tailandes" />
+
+                    <TextView
+                        android:id="@+id/idTextViewTai"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="tailandes"
+                        android:text="@string/str_th"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="turco"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="turco"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="turco"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/turco" />
+
+                    <TextView
+                        android:id="@+id/idTextViewTurc"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="turco"
+                        android:text="@string/str_tr"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginTop="@dimen/margen"
+                android:onClick="chino"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="@dimen/cornerRadiusCardView"
+                app:cardElevation="@dimen/elevationCardView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="chino"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/widhtImage"
+                        android:layout_height="@dimen/heightImage"
+                        android:layout_weight="1"
+                        android:onClick="chino"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.086"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013"
+                        app:srcCompat="@drawable/china" />
+
+                    <TextView
+                        android:id="@+id/idTextViewChin"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="chino"
+                        android:text="@string/str_zh"
+                        android:textSize="@dimen/textSizeTexto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.636"
+                        app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.013" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

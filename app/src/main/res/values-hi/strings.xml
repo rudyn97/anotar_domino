@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">अंग्रेज़ी</string>
+    <string name="str_es">स्पेनिश</string>
+    <string name="str_de">जर्मन</string>
+    <string name="str_zh">चीनी</string>
+    <string name="str_fr">फ्रांसीसी</string>
+    <string name="str_hi">हिंदी</string>
+    <string name="str_in">इन्डोनेशियाई</string>
+    <string name="str_it">इतालवी</string>
+    <string name="str_ja">जापानी</string>
+    <string name="str_pt">पुर्तगाली</string>
+    <string name="str_ru">रूसी</string>
+    <string name="str_th">थाई</string>
+    <string name="str_tr">तुर्की</string>
+
+
+    <string name="app_name">एनोटोट डोमिनोज़।</string>
+
+    <string name="empezar">शुरू</string>
+    <string name="opciones">विकल्प</string>
+    <string name="partidasGuardadas">सहेजे गए खेल</string>
+    <string name="info">जानकारी</string>
+
+    <string name="cant_puntos">बिंदुओं की संख्या:</string>
+    <string name="equiposDosPtos">टीम जोड़ें:</string>
+    <string name="equipos">उपकरण जोड़ें</string>
+    <string name="listaDequipos">टीमों की सूची:</string>
+    <string name="selectJugarCpases">पास के साथ खेलें:</string>
+    <string name="aclaracion1">एक नाम लिखें</string>
+    <string name="aclaracion2">आपको कम से कम दो टीमों की आवश्यकता है</string>
+
+
+    <string name="aplicar">लागू करना</string>
+    <string name="cancelar">रद्द करना</string>
+
+    <string name="equipo_1">टीम 1</string>
+    <string name="equipo_2">टीम 2</string>
+
+
+    <string name="escribirEquipo">टीम</string>
+    <string name="aceptar">मंजूर करना</string>
+    <string name="ha_ganado">उन्होंने टीम जीती है</string>
+
+    <string name="creado">के द्वारा बनाई गई:</string>
+    <string name="contactar">आप हमसे संपर्क कर सकते हैं:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">संस्करण: </string>
+
+    <string name="letra">यह पत्र का आकार है</string>
+
+    <string name="pequeña">छोटा</string>
+    <string name="mediana">मंझला</string>
+    <string name="grande">बड़े</string>
+
+    <string name="equiposOpciones">टीमों</string>
+    <string name="partidoOpciones">मिलान</string>
+    <string name="idiomaOpciones">मुहावरा</string>
+    <string name="letraOpciones">बोल</string>
+    <string name="juegosOpciones">खेल</string>
+
+
+    <string name="regresar">आप वापस नहीं कर सकते</string>
+
+    <string name="ultimaPartida">अंतिम खेल लोड करें:</string>
+
+    <string name="noEscribioNombre">उसने कोई नाम नहीं लिखा</string>
+
+    <string name="tipoJuego1">क्लासिक</string>
+    <string name="tipoJuego1Explicacion">क्लासिक टीम गेम में स्कोर करने के लिए।
+        जीतने वाली टीम अंक लेती है और खेल समाप्त होता है।
+    </string>
+
+    <string name="tipoJuego2">योग और अनुसरण करता है।</string>
+    <string name="tipoJuego2Explicacion">योगदान: Eve \n
+        जीतने वाली टीम उस प्रस्थान के सभी बिंदुओं को ले जाती है, जब तक
+         खेल के कुल अंक की संख्या। बचे हुए धब्बे के लिए होगा
+         अगला मैच।
+    </string>
+
+    <string name="continuar">पार्टी जारी रखें</string>
+
+</resources>

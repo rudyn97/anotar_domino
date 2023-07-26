@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_en">Englisch</string>
+    <string name="str_es">Spanisch</string>
+    <string name="str_de">Deutsche</string>
+    <string name="str_zh">Chinesisch</string>
+    <string name="str_fr">Französisch</string>
+    <string name="str_hi">Hindi</string>
+    <string name="str_in">Indonesisch</string>
+    <string name="str_it">Italienisch</string>
+    <string name="str_ja">japanisch</string>
+    <string name="str_pt">Portugiesisch</string>
+    <string name="str_ru">Russisch</string>
+    <string name="str_th">Thailändisch</string>
+    <string name="str_tr">Türkisch</string>
+
+
+    <string name="app_name">Domino annotieren</string>
+
+    <string name="empezar">Start</string>
+    <string name="opciones">Optionen</string>
+    <string name="partidasGuardadas">Sparte Spiele</string>
+    <string name="info">Information</string>
+
+    <string name="cant_puntos">Anzahl der Punkte:</string>
+    <string name="equiposDosPtos">Team hinzufügen:</string>
+    <string name="equipos">Ausrüstung hinzufügen</string>
+    <string name="listaDequipos">Liste der teams:</string>
+    <string name="selectJugarCpases">Spielen mit Pässen:</string>
+    <string name="aclaracion1">Einen Namen schreiben</string>
+    <string name="aclaracion2">Sie brauchen mindestens zwei Teams</string>
+
+
+    <string name="aplicar">Anwenden</string>
+    <string name="cancelar">Stornieren</string>
+
+    <string name="equipo_1">Team 1</string>
+    <string name="equipo_2">Team 2</string>
+
+
+    <string name="escribirEquipo">Team</string>
+    <string name="aceptar">Akzeptieren</string>
+    <string name="ha_ganado">Er hat das Team gewonnen</string>
+
+    <string name="creado">Erstellt von:</string>
+    <string name="contactar">Sie können uns kontaktieren:</string>
+    <string name="correo">rudyn@nauta.cu</string>
+    <string name="version">Ausführung: </string>
+
+    <string name="letra">Dies ist die Größe des Briefes</string>
+
+    <string name="pequeña">klein</string>
+    <string name="mediana">Median</string>
+    <string name="grande">groß</string>
+
+    <string name="equiposOpciones">Teams</string>
+    <string name="partidoOpciones">Spiel</string>
+    <string name="idiomaOpciones">Idiom</string>
+    <string name="letraOpciones">Text</string>
+    <string name="juegosOpciones">Spielen</string>
+
+
+    <string name="regresar">Sie können nicht zurückkehren</string>
+
+    <string name="ultimaPartida">Last-Last-Spiel laden:</string>
+
+    <string name="noEscribioNombre">Er hat keinen Namen geschrieben</string>
+
+    <string name="tipoJuego1">Klassisch</string>
+    <string name="tipoJuego1Explicacion">Im klassischen Teamspiel punkten.
+        Das Gewinnerteam nimmt die Punkte und das Spiel endet.</string>
+
+    <string name="tipoJuego2">Summe und folgt</string>
+    <string name="tipoJuego2Explicacion">Beitrag von: Eve \n
+        Das Siegerteam nimmt alle Punkte dieser Abreise bis zur
+         Anzahl der Gesamtpunkte des Spiels. Die übrigenden Flecken werden für sein
+         das nächste Spiel.
+    </string>
+
+    <string name="continuar">Fahre fortsetzen</string>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/libreta_verde1"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:id="@+id/idTextLetra"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightIdTextLetra"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="@string/letra"
+        android:textSize="@dimen/textSizeIdTextLetra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextLetra"
+        app:layout_constraintVertical_bias="0.296">
+
+        <RadioButton
+            android:id="@+id/idRadioButtonPeque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomPequeñaMed"
+            android:layout_weight="1"
+            android:onClick="pequeño"
+            android:text="@string/pequeña"
+            android:textSize="@dimen/textSizePequeñaMedGrand"
+            app:layout_constraintBaseline_toBaselineOf="@+id/idRadioButtonMed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintBaseline_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <RadioButton
+            android:id="@+id/idRadioButtonMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomPequeñaMed"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="mediano"
+            android:text="@string/mediana"
+            android:textSize="@dimen/textSizePequeñaMedGrand"
+            app:layout_constraintLeft_toRightOf="@+id/idRadioButtonPeque"
+            app:layout_constraintRight_toLeftOf="@+id/idRadioButtonGrand"
+            app:layout_constraintTop_toBottomOf="@+id/idTextLetra"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <RadioButton
+            android:id="@+id/idRadioButtonGrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="grande"
+            android:text="@string/grande"
+            android:textSize="@dimen/textSizePequeñaMedGrand"
+            app:layout_constraintBaseline_toBaselineOf="@+id/idRadioButtonMed"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintBaseline_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idButtonCancelarLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/cancel"
+        android:onClick="onBackPressed"
+        android:text="@string/cancelar"
+        android:textSize="@dimen/textSizeAceptCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <Button
+        android:id="@+id/idButtonAceptarLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/accept"
+        android:onClick="aceptar"
+        android:text="@string/aplicar"
+        android:textSize="@dimen/textSizeAceptCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+</android.support.constraint.ConstraintLayout>
